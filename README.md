@@ -50,3 +50,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 11. 开关盒布线问题
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133459236)
+
+12. 离线等价类问题
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133460491)
