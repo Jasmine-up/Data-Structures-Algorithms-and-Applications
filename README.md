@@ -38,3 +38,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 8. 数组栈
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133357150)
+
+9. 使用栈解决汉诺塔问题
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133358266)
