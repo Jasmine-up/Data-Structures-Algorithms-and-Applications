@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "_4diagonalMatrix",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "_4diagonalMatrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_4diagonalMatrix-Debug-81b163aadd4abd29bce4.json",
+					"name" : "_4diagonalMatrix",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_4diagonalMatrix/cmake-build-debug",
+		"source" : "C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_4diagonalMatrix"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
