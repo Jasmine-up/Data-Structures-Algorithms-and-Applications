@@ -1,0 +1,13 @@
+# ninja log v5
+0	395	7211324511023925	CMakeFiles/_3matrix.dir/main.cpp.obj	495e2e95058b45ac
+2	473	7211328143484004	CMakeFiles/_3matrix.dir/main.cpp.obj	495e2e95058b45ac
+8	527	7211328144009393	CMakeFiles/_3matrix.dir/_8matrix.cpp.obj	4b047ac6276bb652
+527	616	7211328144866748	_3matrix.exe	a20cc216f2458f6e
+2	348	7211328257778992	CMakeFiles/_3matrix.dir/main.cpp.obj	495e2e95058b45ac
+348	433	7211328258592979	_3matrix.exe	a20cc216f2458f6e
+2	317	7211328478657008	CMakeFiles/_3matrix.dir/main.cpp.obj	495e2e95058b45ac
+8	367	7211328479149957	CMakeFiles/_3matrix.dir/_8matrix.cpp.obj	4b047ac6276bb652
+367	449	7211328479938357	_3matrix.exe	a20cc216f2458f6e
+2	319	7211329516305809	CMakeFiles/_3matrix.dir/main.cpp.obj	495e2e95058b45ac
+8	387	7211329516970162	CMakeFiles/_3matrix.dir/_8matrix.cpp.obj	4b047ac6276bb652
+387	474	7211329517811030	_3matrix.exe	a20cc216f2458f6e
