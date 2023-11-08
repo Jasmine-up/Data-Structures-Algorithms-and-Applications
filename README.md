@@ -34,3 +34,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 7. 二维数组稀疏矩阵
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133048456)
+
+8. 数组栈
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133357150)
