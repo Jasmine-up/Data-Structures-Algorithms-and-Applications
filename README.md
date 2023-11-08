@@ -30,3 +30,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 6. 二维数组下三角矩阵
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133011859)
+
+7. 二维数组稀疏矩阵
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133048456)

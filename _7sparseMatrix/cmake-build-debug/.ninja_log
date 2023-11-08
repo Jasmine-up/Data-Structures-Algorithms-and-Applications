@@ -1,0 +1,8 @@
+# ninja log v5
+0	333	7211358912169711	CMakeFiles/_7sparseMatrix.dir/main.cpp.obj	c5875c32105140fe
+2	249	7211360715326852	CMakeFiles/_7sparseMatrix.dir/main.cpp.obj	c5875c32105140fe
+2	241	7211360868889483	CMakeFiles/_7sparseMatrix.dir/main.cpp.obj	c5875c32105140fe
+1	249	7211363257196565	CMakeFiles/_7sparseMatrix.dir/main.cpp.obj	c5875c32105140fe
+2	248	7211364772507874	CMakeFiles/_7sparseMatrix.dir/main.cpp.obj	c5875c32105140fe
+8	328	7211364773305256	CMakeFiles/_7sparseMatrix.dir/_13sparseMatrix.cpp.obj	6f04a28d6f9dd0db
+328	421	7211364774206478	_7sparseMatrix.exe	a95feee245e1c715
