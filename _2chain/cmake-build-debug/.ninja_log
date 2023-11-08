@@ -1,0 +1,18 @@
+# ninja log v5
+1	403	7211178078455599	CMakeFiles/_2chain.dir/main.cpp.obj	180cac003e5336fb
+2	124	7211179789597870	build.ninja	a30776fa431e12b
+1	116	7211179789597870	build.ninja	a30776fa431e12b
+2	288	7211179792628823	CMakeFiles/_2chain.dir/_2myFunctions.cpp.obj	3ec2dc8afbfd670d
+2	551	7211180325365093	CMakeFiles/_2chain.dir/main.cpp.obj	180cac003e5336fb
+2	444	7211180535851910	CMakeFiles/_2chain.dir/main.cpp.obj	180cac003e5336fb
+7	605	7211180537445507	CMakeFiles/_2chain.dir/_6chain.cpp.obj	cd04402885e229dc
+606	801	7211180539296722	_2chain.exe	2e90f49ebcb094ef
+2	416	7211182069490424	CMakeFiles/_2chain.dir/main.cpp.obj	180cac003e5336fb
+8	555	7211182070879942	CMakeFiles/_2chain.dir/_6chain.cpp.obj	cd04402885e229dc
+555	655	7211182071845120	_2chain.exe	2e90f49ebcb094ef
+2	521	7211182331254411	CMakeFiles/_2chain.dir/main.cpp.obj	180cac003e5336fb
+8	678	7211182332801147	CMakeFiles/_2chain.dir/_6chain.cpp.obj	cd04402885e229dc
+679	812	7211182334122471	_2chain.exe	2e90f49ebcb094ef
+2	437	7211182500003904	CMakeFiles/_2chain.dir/main.cpp.obj	180cac003e5336fb
+8	554	7211182501158279	CMakeFiles/_2chain.dir/_6chain.cpp.obj	cd04402885e229dc
+554	667	7211182502265450	_2chain.exe	2e90f49ebcb094ef
