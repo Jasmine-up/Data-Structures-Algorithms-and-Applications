@@ -42,3 +42,11 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 9. 使用栈解决汉诺塔问题
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133358266)
+
+10. 使用栈解决列车车厢重排问题
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133359497)
+
+11. 开关盒布线问题
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133459236)
