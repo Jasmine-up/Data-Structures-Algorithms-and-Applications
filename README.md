@@ -7,22 +7,26 @@
 
 # 章节
 
-+ 线性表数组描述
+1. 线性表数组描述
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/128354867)
 
-+ 线性表链表描述
+2. 线性表链表描述
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/128364510)
 
-+ 二维数组矩阵
+3. 二维数组矩阵
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/132899133)
 
-+ 二维数组对角矩阵
+4. 二维数组对角矩阵
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/132899343)
 
-+ 二维数组三对角矩阵
+5. 二维数组三对角矩阵
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/132899643)
+
+6. 二维数组下三角矩阵
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133011859)
