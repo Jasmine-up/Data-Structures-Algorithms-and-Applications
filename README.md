@@ -66,3 +66,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 15. 数组队列
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133915760)
+
+16. 数组双端队列
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133943536)
