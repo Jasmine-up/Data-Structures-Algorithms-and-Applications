@@ -70,3 +70,9 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 16. 数组双端队列
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133943536)
+
+17. 电路布线问题
+
+使用队列解决。
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133952892)

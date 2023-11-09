@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "_17Circuit_routing",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "_17Circuit_routing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_17Circuit_routing-Debug-9722b9579e8bc1d7ff50.json",
+					"name" : "_17Circuit_routing",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_17Circuit_routing/cmake-build-debug",
+		"source" : "C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_17Circuit_routing"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
