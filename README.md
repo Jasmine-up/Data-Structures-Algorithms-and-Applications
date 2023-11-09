@@ -76,3 +76,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 使用队列解决。
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133952892)
+
+18. 图元识别问题
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133954791)
