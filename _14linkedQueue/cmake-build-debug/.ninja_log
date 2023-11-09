@@ -1,0 +1,7 @@
+# ninja log v5
+0	254	7212336089560002	CMakeFiles/_14linkedQueue.dir/main.cpp.obj	5cba2de3773618ac
+2	355	7212339891362290	CMakeFiles/_14linkedQueue.dir/main.cpp.obj	5cba2de3773618ac
+8	381	7212339891632513	CMakeFiles/_14linkedQueue.dir/_21linkedQueue.cpp.obj	459f94c164228f1d
+381	497	7212339892516312	_14linkedQueue.exe	89a1a4e42d5dc942
+2	254	7212341266432887	CMakeFiles/_14linkedQueue.dir/_21linkedQueue.cpp.obj	459f94c164228f1d
+255	366	7212341267517857	_14linkedQueue.exe	89a1a4e42d5dc942
