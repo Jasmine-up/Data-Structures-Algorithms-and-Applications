@@ -43,7 +43,9 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133358266)
 
-10. 使用栈解决列车车厢重排问题
+10. 列车车厢重排问题
+
+三种思路：栈解决、队列解决、不用栈和队列解决
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133359497)
 
