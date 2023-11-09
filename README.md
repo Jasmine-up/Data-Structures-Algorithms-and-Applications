@@ -62,3 +62,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 14. 链表队列
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133935891)
+
+15. 数组队列
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133915760)
