@@ -82,3 +82,8 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 18. 图元识别问题
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/133954791)
+
+19. 队列的应用-工厂仿真
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/134358747)
+
