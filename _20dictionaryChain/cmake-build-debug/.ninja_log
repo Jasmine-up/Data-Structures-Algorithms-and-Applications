@@ -1,0 +1,7 @@
+# ninja log v5
+0	240	7215444386867495	CMakeFiles/_20dictionaryChain.dir/main.cpp.obj	422e77afe36f8429
+2	231	7215446520381997	CMakeFiles/_20dictionaryChain.dir/main.cpp.obj	422e77afe36f8429
+7	253	7215446520600584	CMakeFiles/_20dictionaryChain.dir/_23dictionaryChain.cpp.obj	788fef53031bcba
+253	343	7215446521466240	_20dictionaryChain.exe	6340c480879dc65d
+2	244	7215446690869967	CMakeFiles/_20dictionaryChain.dir/_23dictionaryChain.cpp.obj	788fef53031bcba
+244	327	7215446691677857	_20dictionaryChain.exe	6340c480879dc65d
