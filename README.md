@@ -87,3 +87,11 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/134358747)
 
+20. 键值有序链表数组
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/134371461)
+
+21.键值有序链表跳表
+
+CSDN文章链接：[地址](http://t.csdnimg.cn/dWT81)
+
