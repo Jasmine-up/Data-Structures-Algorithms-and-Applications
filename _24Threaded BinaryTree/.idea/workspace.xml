@@ -21,14 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="400e6dd1-ddb9-4069-9f93-4f02f6a1d6b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/_24Threaded BinaryTree.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/binaryTree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inThreadedBinaryTreeChains.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inThreadedBinaryTreeChains.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inThreadedBinaryTreeNode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_23BinaryTree/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../_23BinaryTree/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +66,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701095684838</updated>
       <workItem from="1701095686258" duration="865000" />
-      <workItem from="1701142998824" duration="5758000" />
+      <workItem from="1701142998824" duration="7857000" />
+      <workItem from="1701228798014" duration="14000" />
     </task>
     <servers />
   </component>

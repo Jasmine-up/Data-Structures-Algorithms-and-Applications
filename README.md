@@ -106,3 +106,7 @@ CSDN文章链接：[地址](http://t.csdnimg.cn/QNjfQ)
 24.线索二叉树的定义与实现
 
 CSDN文章链接：[地址](http://t.csdnimg.cn/75fcm)
+
+25.优先级队列-大根堆的C++实现
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/134700643)
