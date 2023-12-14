@@ -115,3 +115,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/134989078)
 
+27.堆排序 - 借助priority_queue的C++实现
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/134991694)
+
