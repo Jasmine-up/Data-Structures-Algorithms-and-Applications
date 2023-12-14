@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\15495\Documents\Jasmine\prj\_Algorithm\Data Structures, Algorithms and Applications in C++\_26maxHblt\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\15495\Documents\Jasmine\prj\_Algorithm\Data Structures, Algorithms and Applications in C++\_26maxHblt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{81E78FA0-E5A8-3256-BB64-0038C9A74314}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
