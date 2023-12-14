@@ -119,3 +119,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/134991694)
 
+28. 机器调度-最长处理时间(LPT)
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135005387)
+
