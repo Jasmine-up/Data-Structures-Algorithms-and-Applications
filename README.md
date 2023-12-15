@@ -123,3 +123,6 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135005387)
 
+29. 构建哈夫曼树
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135026021)

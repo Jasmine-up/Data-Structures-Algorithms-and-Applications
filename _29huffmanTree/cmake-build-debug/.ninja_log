@@ -1,0 +1,21 @@
+# ninja log v5
+0	404	7243503605383305	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+4	401	7243503605353294	CMakeFiles/_29huffmanTree.dir/huffmanTree.cpp.obj	623b16f5d2c46532
+1	92	7243504142039857	build.ninja	cc1de927452ac651
+299	438	7243502233237684	_29huffmanTree.exe	26d50deda9abee54
+0	86	7243504142039857	build.ninja	cc1de927452ac651
+0	431	7243504146450244	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+0	455	7243504843291966	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+455	608	7243504844500444	_29huffmanTree.exe	d1fb771deaa95084
+0	451	7243506288141111	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+453	599	7243506289390133	_29huffmanTree.exe	d1fb771deaa95084
+0	450	7243508624391808	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+451	596	7243508625604116	_29huffmanTree.exe	d1fb771deaa95084
+0	453	7243513083577710	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+453	601	7243513084788033	_29huffmanTree.exe	d1fb771deaa95084
+0	458	7243517749007208	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+459	629	7243517750233242	_29huffmanTree.exe	d1fb771deaa95084
+1	344	7243517879909967	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+344	483	7243517881057324	_29huffmanTree.exe	d1fb771deaa95084
+1	482	7243518438307408	CMakeFiles/_29huffmanTree.dir/main.cpp.obj	c0fd5cbab359ffbb
+482	627	7243518439512499	_29huffmanTree.exe	d1fb771deaa95084
