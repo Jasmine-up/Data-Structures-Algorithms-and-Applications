@@ -1,0 +1,8 @@
+# ninja log v5
+1	93	7245968316090898	build.ninja	a4b2573b4d3d9975
+4	829	7245942624317553	CMakeFiles/_30winnerTree.dir/main.cpp.obj	7d2ba94f7b505e5
+0	839	7245942624445796	CMakeFiles/_30winnerTree.dir/completeWinnerTree.cpp.obj	4218c213611417a1
+840	1630	7245942632250380	_30winnerTree.exe	22e4538b3560fd03
+8	3234	7246594902619185	CMakeFiles/_30winnerTree.dir/main.cpp.obj	7d2ba94f7b505e5
+0	3250	7246594902761996	CMakeFiles/_30winnerTree.dir/completeWinnerTree.cpp.obj	4218c213611417a1
+3250	8939	7246594935982088	_30winnerTree.exe	22e4538b3560fd03

@@ -126,3 +126,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 29. 构建哈夫曼树
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135026021)
+
+30.赢者树的C++实现
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135080624)
