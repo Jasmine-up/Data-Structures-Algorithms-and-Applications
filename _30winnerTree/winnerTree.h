@@ -2,7 +2,7 @@
 Project name :			_30winnerTree
 Last modified Date:		2023年12月18日16点28分
 Last Version:			V1.0
-Descriptions:			赢者树的抽象类
+Descriptions:			最小赢者树的抽象类
 */
 
 #ifndef _30WINNERTREE_WINNERTREE_H

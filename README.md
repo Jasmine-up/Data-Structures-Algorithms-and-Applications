@@ -127,6 +127,10 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135026021)
 
-30.赢者树的C++实现
+30.最小赢者树的C++实现
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135080624)
+
+31.最小输者树的C++实现
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135089048)
