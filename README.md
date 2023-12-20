@@ -134,3 +134,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 31.最小输者树的C++实现
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135089048)
+
+32. 箱子装载问题-最大输者树实现最先适配法C++
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135110440)
