@@ -1,23 +1,23 @@
 /*
 Project name :			allAlgorithmsTest
-Last modified Date:		2022å¹´8æœˆ13æ—¥17ç‚¹38åˆ†
+Last modified Date:		2022Äê8ÔÂ13ÈÕ17µã38·Ö
 Last Version:			V1.0
-Descriptions:			æµ‹è¯•_2myFunctions.hå¤´æ–‡ä»¶ä¸­çš„æ‰€æœ‰å‡½æ•°
+Descriptions:			²âÊÔ_2myFunctions.hÍ·ÎÄ¼şÖĞµÄËùÓĞº¯Êı
 */
 #include "_2myFunctions.h"
 using std::cout;
 using std::endl;
-/*myFunctionsçš„æµ‹è¯•å‡½æ•°*/
+/*myFunctionsµÄ²âÊÔº¯Êı*/
 void myFunctionsTest()
 {
-    cout << endl << "********************************myFunctionsTest()å‡½æ•°å¼€å§‹*************************************" << endl;
-    //cout << "æ±‰è¯ºå¡”*************************************************" << endl;
+    cout << endl << "********************************myFunctionsTest()º¯Êı¿ªÊ¼*************************************" << endl;
+    //cout << "ººÅµËş*************************************************" << endl;
     //towersOfHanoiRecursion(4, 1, 2, 3);
-    cout << "********************************myFunctionsTest()å‡½æ•°ç»“æŸ*************************************" << endl;
+    cout << "********************************myFunctionsTest()º¯Êı½áÊø*************************************" << endl;
 }
 
-/*æ±‰è¯ºå¡”çš„é€’å½’è§£å†³æ–¹æ¡ˆ*/
-/*æ‰§è¡Œæ¬è¿æ¬¡æ•°ä¸º2^n-1æ¬¡*/
+/*ººÅµËşµÄµİ¹é½â¾ö·½°¸*/
+/*Ö´ĞĞ°áÔË´ÎÊıÎª2^n-1´Î*/
 void towersOfHanoiRecursion(int n, int x, int y, int z)
 {
     static int numberOfMove = 0;

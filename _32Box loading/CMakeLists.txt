@@ -6,4 +6,8 @@ set(DCMAKE_BUILD_TYPE Debug)
 add_executable(_32Box_loading_ main.cpp
         loserTree.h
         myExceptions.h
-        MaxmumLoserTree.h)
+        MaxmumLoserTree.h
+        dBinarySearchTree.h
+        bsTree.h
+        dictionary.h
+        binaryTreeNode.h)

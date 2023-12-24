@@ -1,8 +1,8 @@
 /*
 Project name :			allAlgorithmsTest
-Last modified Date:		2022å¹´8æœˆ13æ—¥22ç‚¹06åˆ†
+Last modified Date:		2022Äê8ÔÂ13ÈÕ22µã06·Ö
 Last Version:			V1.0
-Descriptions:			é“¾è¡¨çš„ç»“ç‚¹
+Descriptions:			Á´±íµÄ½áµã
 */
 #pragma once
 #ifndef _CHAINNODE_H_
@@ -10,10 +10,10 @@ Descriptions:			é“¾è¡¨çš„ç»“ç‚¹
 template <class T>
 struct chainNode
 {
-    //æ•°æ®æˆå‘˜
+    //Êı¾İ³ÉÔ±
     T element;
     chainNode<T>* next;
-    //æ–¹æ³•
+    //·½·¨
     chainNode() {}
     chainNode(const T& element)
     {

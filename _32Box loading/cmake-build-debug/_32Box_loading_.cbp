@@ -87,6 +87,18 @@
 		<Unit filename="C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_32Box loading/MaxmumLoserTree.h">
 			<Option target="_32Box_loading_"/>
 		</Unit>
+		<Unit filename="C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_32Box loading/binaryTreeNode.h">
+			<Option target="_32Box_loading_"/>
+		</Unit>
+		<Unit filename="C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_32Box loading/bsTree.h">
+			<Option target="_32Box_loading_"/>
+		</Unit>
+		<Unit filename="C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_32Box loading/dBinarySearchTree.h">
+			<Option target="_32Box_loading_"/>
+		</Unit>
+		<Unit filename="C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_32Box loading/dictionary.h">
+			<Option target="_32Box_loading_"/>
+		</Unit>
 		<Unit filename="C:/Users/15495/Documents/Jasmine/prj/_Algorithm/Data Structures, Algorithms and Applications in C++/_32Box loading/loserTree.h">
 			<Option target="_32Box_loading_"/>
 		</Unit>

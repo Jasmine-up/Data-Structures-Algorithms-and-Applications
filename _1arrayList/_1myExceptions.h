@@ -1,8 +1,8 @@
 /*
 Project name :			allAlgorithmsTest
-Last modified Date:		2022å¹´8æœˆ13æ—¥17ç‚¹38åˆ†
+Last modified Date:		2022Äê8ÔÂ13ÈÕ17µã38·Ö
 Last Version:			V1.0
-Descriptions:			ç»¼åˆå„ç§å¼‚å¸¸
+Descriptions:			×ÛºÏ¸÷ÖÖÒì³£
 */
 #pragma once
 #ifndef _MYEXCEPTIONS_H_

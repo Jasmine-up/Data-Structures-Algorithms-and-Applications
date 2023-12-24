@@ -1,13 +1,13 @@
 /*
 Project name :			allAlgorithmsTest
-Last modified Date:		2022å¹´8æœˆ13æ—¥17ç‚¹38åˆ†
+Last modified Date:		2022Äê8ÔÂ13ÈÕ17µã38·Ö
 Last Version:			V1.0
-Descriptions:			æ•°ç»„çº¿æ€§è¡¨å¤´æ–‡ä»¶---å•è¡¨
+Descriptions:			Êı×éÏßĞÔ±íÍ·ÎÄ¼ş---µ¥±í
 */
 #pragma once
 #ifndef __ARRAYLIST_H_
 #define __ARRAYLIST_H_
-/*äº‹å®è¯æ˜ï¼Œæ¨¡æ¿ä¸æ¨¡æ¿æ˜¯å¯ä»¥ä¸åœ¨åŒä¸€ä¸ªå¤´æ–‡ä»¶ä¸‹çš„ã€‚ä½†æ˜¯ï¼Œæ¨¡æ¿å‡½æ•°å£°æ˜å’Œå®šä¹‰è¦åœ¨åŒä¸€ä¸ªå¤´æ–‡ä»¶ä¸‹ã€‚*/
+/*ÊÂÊµÖ¤Ã÷£¬Ä£°åÓëÄ£°åÊÇ¿ÉÒÔ²»ÔÚÍ¬Ò»¸öÍ·ÎÄ¼şÏÂµÄ¡£µ«ÊÇ£¬Ä£°åº¯ÊıÉùÃ÷ºÍ¶¨ÒåÒªÔÚÍ¬Ò»¸öÍ·ÎÄ¼şÏÂ¡£*/
 
 #include <algorithm>
 #include<iostream>
@@ -30,27 +30,27 @@ using std::ostream_iterator;
 using std::bidirectional_iterator_tag;
 using std::ptrdiff_t;
 
-//ç”±äºä¸èƒ½äº’ç›¸åŒ…å«å¤´æ–‡ä»¶ï¼Œå› æ­¤ç»™å‡ºå£°æ˜
+//ÓÉÓÚ²»ÄÜ»¥Ïà°üº¬Í·ÎÄ¼ş£¬Òò´Ë¸ø³öÉùÃ÷
 template<class T>
 class chain;
 template<typename T>
 class arrayList;
-void arrayListTest();//arrayListæµ‹è¯•å‡½æ•°ï¼Œæµ‹è¯•arrayListæ‰€æœ‰å‡½æ•°
+void arrayListTest();//arrayList²âÊÔº¯Êı£¬²âÊÔarrayListËùÓĞº¯Êı
 
 template<class T>
 class arrayList : public linearList<T>
 {
 public:
-    /*æ„é€ å‡½æ•°*/
+    /*¹¹Ôìº¯Êı*/
     arrayList(int initialCapacity = 1);
-    /*å¤åˆ¶æ„é€ å‡½æ•°*/
+    /*¸´ÖÆ¹¹Ôìº¯Êı*/
     arrayList(const arrayList<T>&);
-    /*ä½¿ç”¨é“¾è¡¨æ„é€ æ•°ç»„*/
+    /*Ê¹ÓÃÁ´±í¹¹ÔìÊı×é*/
     arrayList(const chain<T>& theChain);
-    /*ææ„å‡½æ•°*/
+    /*Îö¹¹º¯Êı*/
     ~arrayList() { delete[] element; }
 
-    /*å…¶ä»–æˆå‘˜å‡½æ•°*/
+    /*ÆäËû³ÉÔ±º¯Êı*/
     bool empty() const { return arraySize == 0; }
     int size() const { return arraySize; }
     T& get(int theIndex) const;
@@ -59,86 +59,86 @@ public:
     void insert(int theIndex, const T& theElement);
     void insert(int theIndex, const T& theElement,int size);
     void output(ostream& out) const;
-    /*ç»ƒä¹ é¢˜5 æ—¶é—´å¤æ‚åº¦ä¸ºO(1)*/
+    /*Á·Ï°Ìâ5 Ê±¼ä¸´ÔÓ¶ÈÎªO(1)*/
     void trimToSize();
 
     int capacity() const { return arrayLength; }
-    /*ç»ƒä¹ é¢˜11*/
-    void push_back(const T& theElement);//å°†å…ƒç´ theElementæ’å…¥æ•°ç»„çš„æœ€å³ç«¯
-    /*ç»ƒä¹ é¢˜12*/
-    T pop_back();//åˆ é™¤æ•°ç»„æœ€å³ç«¯å…ƒç´ ï¼Œå¹¶è¿”å›è¯¥å…ƒç´ 
-    /*ç»ƒä¹ é¢˜13*/
+    /*Á·Ï°Ìâ11*/
+    void push_back(const T& theElement);//½«ÔªËØtheElement²åÈëÊı×éµÄ×îÓÒ¶Ë
+    /*Á·Ï°Ìâ12*/
+    T pop_back();//É¾³ıÊı×é×îÓÒ¶ËÔªËØ£¬²¢·µ»Ø¸ÃÔªËØ
+    /*Á·Ï°Ìâ13*/
     void swap(arrayList<T>& theList);
-    /*ç»ƒä¹ é¢˜14*/
+    /*Á·Ï°Ìâ14*/
     void reserve(int theCapacity);
-    /*ç»ƒä¹ é¢˜15*/
+    /*Á·Ï°Ìâ15*/
     void set(int theIndex, const T& theElement);
-    /*ç»ƒä¹ é¢˜16*/
+    /*Á·Ï°Ìâ16*/
     void clear();
-    /*ç»ƒä¹ é¢˜17*/
+    /*Á·Ï°Ìâ17*/
     void removeRange(int theIndex1, int theIndex2);
-    /*ç»ƒä¹ é¢˜18*/
+    /*Á·Ï°Ìâ18*/
     int lastIndexOf(T theElement);
-    /*ç»ƒä¹ é¢˜22*/
+    /*Á·Ï°Ìâ22*/
     void reverse();
-    /*ç»ƒä¹ é¢˜23*/
+    /*Á·Ï°Ìâ23*/
     void leftShift(int num);
-    /*ç»ƒä¹ é¢˜24*/
+    /*Á·Ï°Ìâ24*/
     void circularShift(int i);
-    /*ç»ƒä¹ é¢˜25*/
+    /*Á·Ï°Ìâ25*/
     void half();
-    /*ç»ƒä¹ é¢˜28*/
+    /*Á·Ï°Ìâ28*/
     void meld(arrayList<T>& a, arrayList<T>& b);
-    /*ç»ƒä¹ é¢˜29*/
+    /*Á·Ï°Ìâ29*/
     void merge(arrayList<T>& a, arrayList<T>& b);
-    /*ç»ƒä¹ é¢˜30*/
+    /*Á·Ï°Ìâ30*/
     void split(arrayList<T>& a, arrayList<T>& b);
     void reSet(int capacity);
 
-    /*è¿­ä»£å™¨ç›¸å…³*/
-    //é—®é¢˜ï¼šæ‰©å±•è¿­ä»£å™¨ï¼Œä½¿ä¹‹æˆä¸ºéšæœºè®¿é—®è¿­ä»£å™¨ï¼Œè¿™ä¸ªæš‚æ—¶ä¸å¤ªä¼šã€‚
+    /*µü´úÆ÷Ïà¹Ø*/
+    //ÎÊÌâ£ºÀ©Õ¹µü´úÆ÷£¬Ê¹Ö®³ÉÎªËæ»ú·ÃÎÊµü´úÆ÷£¬Õâ¸öÔİÊ±²»Ì«»á¡£
     class iterator
     {
     public:
-        //ç”¨C++çš„typedefè¯­å¥å®ç°åŒå‘è¿­ä»£å™¨
-        //è¿™ä¸€å°æ®µtypedefæš‚æ—¶ä¸å¤ªæ‡‚
-        typedef bidirectional_iterator_tag iterator_category;//åŒå‘è¿­ä»£å™¨
+        //ÓÃC++µÄtypedefÓï¾äÊµÏÖË«Ïòµü´úÆ÷
+        //ÕâÒ»Ğ¡¶ÎtypedefÔİÊ±²»Ì«¶®
+        typedef bidirectional_iterator_tag iterator_category;//Ë«Ïòµü´úÆ÷
         typedef T value_type;
-        typedef ptrdiff_t difference_type;//æ˜¯ä¸€ä¸ªä¸æœºå™¨ç›¸å…³çš„æ•°æ®ç±»å‹ï¼Œé€šå¸¸ç”¨æ¥ä¿å­˜ä¸¤ä¸ªæŒ‡é’ˆå‡æ³•æ“ä½œçš„ç»“æœã€‚
+        typedef ptrdiff_t difference_type;//ÊÇÒ»¸öÓë»úÆ÷Ïà¹ØµÄÊı¾İÀàĞÍ£¬Í¨³£ÓÃÀ´±£´æÁ½¸öÖ¸Õë¼õ·¨²Ù×÷µÄ½á¹û¡£
         typedef T* pointer;
         typedef T& reference;
 
-        //æ„é€ å‡½æ•°
+        //¹¹Ôìº¯Êı
         iterator(T* thePosition = 0) { position = thePosition; }
-        //è§£å¼•ç”¨æ“ä½œç¬¦
+        //½âÒıÓÃ²Ù×÷·û
         T& operator*() const { return *position; }
-        //æŒ‡é’ˆæ“ä½œç¬¦->
+        //Ö¸Õë²Ù×÷·û->
         T* operator->() const { return &*position; }
-        //è¿­ä»£å™¨çš„å€¼å¢åŠ 
-        iterator& operator++()//å‰åŠ 
+        //µü´úÆ÷µÄÖµÔö¼Ó
+        iterator& operator++()//Ç°¼Ó
         {
             ++position;
             return *this;
         }
-        iterator operator++(int)//ååŠ 
+        iterator operator++(int)//ºó¼Ó
         {
             iterator old = *this;
             ++position;
             return old;
         }
-        //è¿­ä»£å™¨çš„å€¼å‡å°‘
-        iterator& operator--()//å‰å‡
+        //µü´úÆ÷µÄÖµ¼õÉÙ
+        iterator& operator--()//Ç°¼õ
         {
             --position;
             return *this;
         }
-        iterator operator--(int)//åå‡
+        iterator operator--(int)//ºó¼õ
         {
             iterator old = *this;
             --position;
             return old;
         }
-        //æµ‹è¯•æ˜¯å¦ç›¸ç­‰
+        //²âÊÔÊÇ·ñÏàµÈ
         bool operator!=(const iterator right) const
         {
             return position != right.position;
@@ -151,88 +151,88 @@ public:
         T* position;
     };
     iterator begin() { return iterator(element); }
-    iterator end() { return iterator(element + arraySize); }//è¿”å›çš„æ˜¯æœ€åä¸€ä¸ªå…ƒç´ åé¢çš„ä¸€ä¸ªä½ç½®
+    iterator end() { return iterator(element + arraySize); }//·µ»ØµÄÊÇ×îºóÒ»¸öÔªËØºóÃæµÄÒ»¸öÎ»ÖÃ
 
-    /*é‡è½½æ“ä½œç¬¦*/
-    /*ç»ƒä¹ é¢˜7*/
+    /*ÖØÔØ²Ù×÷·û*/
+    /*Á·Ï°Ìâ7*/
     T& operator[](int i);
     const T& operator[](int i) const;
-    /*ç»ƒä¹ é¢˜8*/
+    /*Á·Ï°Ìâ8*/
     bool operator==(arrayList<T> right) const;
-    /*ç»ƒä¹ é¢˜9*/
+    /*Á·Ï°Ìâ9*/
     bool operator!=(arrayList<T> right) const;
-    /*ç»ƒä¹ é¢˜10*/
+    /*Á·Ï°Ìâ10*/
     bool operator<(arrayList<T> right) const;
 
-    /*æ’åº*/
+    /*ÅÅĞò*/
     void bubbleSort();
     void rankSort();
     int indexOfMax();
     void selectionSort();
     void insertSort();
 
-    //è¿™ä¸ªå‡½æ•°ç”¨äºä¸€æ¬¡æ€§è¾“å…¥å¾ˆå¤šå…ƒç´ åˆ°çº¿æ€§è¡¨
+    //Õâ¸öº¯ÊıÓÃÓÚÒ»´ÎĞÔÊäÈëºÜ¶àÔªËØµ½ÏßĞÔ±í
     istream& input(istream& in);
 
 protected:
-    void checkIndex(int theIndex) const;//è‹¥ç´¢å¼•theIndexæ— æ•ˆï¼Œåˆ™æŠ›å‡ºå¼‚å¸¸
-    /*setLength()å‡½æ•°æ²¡æœ‰é‡æ–°åˆ†é…å†…å­˜*/
-    /*setLength(),setSize(),setElement()å‡½æ•°åªåº”ç”¨äºswap()å‡½æ•°*/
+    void checkIndex(int theIndex) const;//ÈôË÷ÒıtheIndexÎŞĞ§£¬ÔòÅ×³öÒì³£
+    /*setLength()º¯ÊıÃ»ÓĞÖØĞÂ·ÖÅäÄÚ´æ*/
+    /*setLength(),setSize(),setElement()º¯ÊıÖ»Ó¦ÓÃÓÚswap()º¯Êı*/
     void setLength(int Length) { arrayLength = Length; }
     void setSize(int Size) { arraySize = Size; }
     void setElement(T* theElement) { element = theElement; }
     T* address() const { return element; }
-    T* element;//å­˜å‚¨çº¿æ€§è¡¨å…ƒç´ çš„ä¸€ç»´æ•°ç»„
-    int arrayLength;//ä¸€ç»´æ•°ç»„çš„å®¹é‡
-    int arraySize;//çº¿æ€§è¡¨çš„å…ƒç´ ä¸ªæ•°
+    T* element;//´æ´¢ÏßĞÔ±íÔªËØµÄÒ»Î¬Êı×é
+    int arrayLength;//Ò»Î¬Êı×éµÄÈİÁ¿
+    int arraySize;//ÏßĞÔ±íµÄÔªËØ¸öÊı
 };
 
-/*æ„é€ å‡½æ•°*/
+/*¹¹Ôìº¯Êı*/
 template<class T>
 arrayList<T>::arrayList(int initialCapacity)
 {
-    //æ£€æŸ¥åˆå§‹æ•°ç»„å¤§å°æ˜¯å¦ç¬¦åˆè¦æ±‚
+    //¼ì²é³õÊ¼Êı×é´óĞ¡ÊÇ·ñ·ûºÏÒªÇó
     if ( initialCapacity < 1 )
     {
         ostringstream s("");
         s << "Initial capacity = " << initialCapacity << "Must be > 0";
         throw illegalParameterValue(s.str());
     }
-    //åˆå§‹åŒ–æ•°ç»„ç§æœ‰å…ƒç´ 
+    //³õÊ¼»¯Êı×éË½ÓĞÔªËØ
     arrayLength = initialCapacity;
     element = new T[arrayLength];
     arraySize = 0;
 }
 
-/*å¤åˆ¶æ„é€ å‡½æ•°*/
+/*¸´ÖÆ¹¹Ôìº¯Êı*/
 template<class T>
 arrayList<T>::arrayList(const arrayList<T>& theList)
 {
     arrayLength = theList.arrayLength;
     arraySize = theList.arraySize;
-    //ä¸ºæ–°æ•°ç»„åˆ†é…å†…å­˜
+    //ÎªĞÂÊı×é·ÖÅäÄÚ´æ
     element = new T[arrayLength];
-    //å°†æ—§æ•°ç»„ä¸­çš„å…ƒç´ å¤åˆ¶åˆ°æ–°æ•°ç»„
+    //½«¾ÉÊı×éÖĞµÄÔªËØ¸´ÖÆµ½ĞÂÊı×é
     copy(theList.element, theList.element + arraySize, element);
 }
 
-/*ä½¿ç”¨chainåˆå§‹åŒ–æ•°ç»„,ä½¿ç”¨äº†è¿­ä»£å™¨*/
+/*Ê¹ÓÃchain³õÊ¼»¯Êı×é,Ê¹ÓÃÁËµü´úÆ÷*/
 template<class T>
 arrayList<T>::arrayList(const chain<T>& theChain)
 {
     arraySize = theChain.size();
     arrayLength = arraySize;
-    element = new T[arraySize];//ä½¿å¾—æ•°ç»„çš„é•¿åº¦å’Œå®¹é‡ç›¸ç­‰
-    //é¦–å…ˆå®šä¹‰ä¸€ä¸ªé“¾è¡¨è¿­ä»£å™¨æŒ‡å‘é“¾è¡¨é¦–åœ°å€
-    /*è¿™é‡Œä¸ºä»€ä¹ˆè¦æ˜¯æœ‰typename?åŸå› æ˜¯ä¸ä½¿ç”¨typenameå°†ä¼šå¼•å‘é”™è¯¯ï¼š
-      é”™è¯¯	C7510	â€œiteratorâ€: ç±»å‹ ä»å±åç§°çš„ä½¿ç”¨å¿…é¡»ä»¥â€œtypenameâ€ä¸ºå‰ç¼€ã€‚
-      åªæœ‰åŠ ä¸Štypenameæ‰å¯è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œå…·ä½“åŸå› æš‚æ—¶ä¸æ¸…æ¥šã€‚
+    element = new T[arraySize];//Ê¹µÃÊı×éµÄ³¤¶ÈºÍÈİÁ¿ÏàµÈ
+    //Ê×ÏÈ¶¨ÒåÒ»¸öÁ´±íµü´úÆ÷Ö¸ÏòÁ´±íÊ×µØÖ·
+    /*ÕâÀïÎªÊ²Ã´ÒªÊÇÓĞtypename?Ô­ÒòÊÇ²»Ê¹ÓÃtypename½«»áÒı·¢´íÎó£º
+      ´íÎó	C7510	¡°iterator¡±: ÀàĞÍ ´ÓÊôÃû³ÆµÄÊ¹ÓÃ±ØĞëÒÔ¡°typename¡±ÎªÇ°×º¡£
+      Ö»ÓĞ¼ÓÉÏtypename²Å¿É½â¾öÕâ¸öÎÊÌâ£¬¾ßÌåÔ­ÒòÔİÊ±²»Çå³ş¡£
 
-      åŸå› ï¼štypenameæ˜¯classçš„åŒä¹‰è¯ï¼›è¿™é‡Œä½¿ç”¨typenameæˆ–classéƒ½å¯é€šè¿‡ç¼–è¯‘ã€‚
-      ç›®çš„åœ¨äºå‘Šè¯‰ç¼–è¯‘å™¨chain<T>::iteratoræ˜¯ä¸€ä¸ªç±»å‹è€Œéå˜é‡ï¼Œæœ¬ç¨‹åºä¸­ä¸ºäº†è§£å†³
-      å¤´æ–‡ä»¶äº’ç›¸å¼•ç”¨çš„é—®é¢˜ï¼Œåªå£°æ˜äº†chainæ˜¯ä¸€ä¸ªç±»ï¼Œç¼–è¯‘å™¨åœ¨æ­¤å¤„å¹¶ä¸çŸ¥é“chainçš„
-      æˆå‘˜iteratoræ˜¯ç±»å‹è¿˜æ˜¯å˜é‡ï¼Œå› æ­¤ä¸ºè§£å†³äºŒä¹‰æ€§é—®é¢˜å¿…é¡»ä½¿ç”¨typenameæˆ–classå£°
-      æ˜iteratoræ˜¯ç±»å‹ã€‚
+      Ô­Òò£ºtypenameÊÇclassµÄÍ¬Òå´Ê£»ÕâÀïÊ¹ÓÃtypename»òclass¶¼¿ÉÍ¨¹ı±àÒë¡£
+      Ä¿µÄÔÚÓÚ¸æËß±àÒëÆ÷chain<T>::iteratorÊÇÒ»¸öÀàĞÍ¶ø·Ç±äÁ¿£¬±¾³ÌĞòÖĞÎªÁË½â¾ö
+      Í·ÎÄ¼ş»¥ÏàÒıÓÃµÄÎÊÌâ£¬Ö»ÉùÃ÷ÁËchainÊÇÒ»¸öÀà£¬±àÒëÆ÷ÔÚ´Ë´¦²¢²»ÖªµÀchainµÄ
+      ³ÉÔ±iteratorÊÇÀàĞÍ»¹ÊÇ±äÁ¿£¬Òò´ËÎª½â¾ö¶şÒåĞÔÎÊÌâ±ØĞëÊ¹ÓÃtypename»òclassÉù
+      Ã÷iteratorÊÇÀàĞÍ¡£
     */
     typename chain<T>::iterator pointer = theChain.begin();
     int i = 0;
@@ -244,7 +244,7 @@ arrayList<T>::arrayList(const chain<T>& theChain)
     }
 }
 
-/*æ£€æŸ¥ç´¢å¼•æ˜¯å¦æœ‰æ•ˆ*/
+/*¼ì²éË÷ÒıÊÇ·ñÓĞĞ§*/
 template<class T>
 void arrayList<T>::checkIndex(int theIndex) const
 {
@@ -256,7 +256,7 @@ void arrayList<T>::checkIndex(int theIndex) const
     }
 }
 
-/*è¿”å›ç´¢å¼•ä¸ºtheIndexçš„å…ƒç´ ï¼›è‹¥æ­¤å…ƒç´ ä¸å­˜åœ¨ï¼Œåˆ™æŠ›å‡ºå¼‚å¸¸*/
+/*·µ»ØË÷ÒıÎªtheIndexµÄÔªËØ£»Èô´ËÔªËØ²»´æÔÚ£¬ÔòÅ×³öÒì³£*/
 template<class T>
 T& arrayList<T>::get(int theIndex) const
 {
@@ -264,9 +264,9 @@ T& arrayList<T>::get(int theIndex) const
     return element[theIndex];
 }
 
-/*è¿”å›å…ƒç´ theElementç¬¬ä¸€æ¬¡å‡ºç°æ—¶çš„ç´¢å¼•ï¼›è‹¥è¯¥å…ƒç´ ä¸å­˜åœ¨ï¼Œåˆ™è¿”å›-1*/
+/*·µ»ØÔªËØtheElementµÚÒ»´Î³öÏÖÊ±µÄË÷Òı£»Èô¸ÃÔªËØ²»´æÔÚ£¬Ôò·µ»Ø-1*/
 template<class T>
-int arrayList<T>::indexOf(const T& theElement) const//constè¡¨ç¤ºæ­¤å‡½æ•°ä¸æ›´æ”¹å½¢å‚çš„å†…å®¹
+int arrayList<T>::indexOf(const T& theElement) const//const±íÊ¾´Ëº¯Êı²»¸ü¸ÄĞÎ²ÎµÄÄÚÈİ
 {
     int theIndex = (int)(find(element, element + arraySize, theElement) - element);
     if (theIndex == arraySize)
@@ -275,27 +275,27 @@ int arrayList<T>::indexOf(const T& theElement) const//constè¡¨ç¤ºæ­¤å‡½æ•°ä¸æ›´
         return theIndex;
 }
 
-/*å¦‚æœæ•°ç»„å…ƒç´ æ•°é‡ä¸º0ï¼Œåˆ™å°†å…¶å®¹é‡è®¾ç½®ä¸º1*/
+/*Èç¹ûÊı×éÔªËØÊıÁ¿Îª0£¬Ôò½«ÆäÈİÁ¿ÉèÖÃÎª1*/
 template<class T>
 void arrayList<T>::trimToSize()
 {
     if (arraySize == 0)
     {
-        //æ•°ç»„ä¸­æ— å…ƒç´ æ—¶ï¼Œå°†æ•°ç»„å®¹é‡è®¾ç½®ä¸º1
+        //Êı×éÖĞÎŞÔªËØÊ±£¬½«Êı×éÈİÁ¿ÉèÖÃÎª1
         changeLength(element, arrayLength, 1);
         arrayLength = 1;
     }
 }
 
-/*åˆ é™¤ç´¢å¼•ä¸ºtheIndexçš„å…ƒç´ ï¼›å¦‚æœè¯¥å…ƒç´ ä¸å­˜åœ¨ï¼Œåˆ™æŠ›å‡ºillegalIndexå¼‚å¸¸*/
+/*É¾³ıË÷ÒıÎªtheIndexµÄÔªËØ£»Èç¹û¸ÃÔªËØ²»´æÔÚ£¬ÔòÅ×³öillegalIndexÒì³£*/
 template<class T>
 void arrayList<T>::erase(int theIndex)
 {
     checkIndex(theIndex);
     copy(element + theIndex + 1, element + arraySize, element + theIndex);
-    element[--arraySize].~T();//è°ƒç”¨ææ„å‡½æ•°ï¼Œæ›´å®‰å…¨
+    element[--arraySize].~T();//µ÷ÓÃÎö¹¹º¯Êı£¬¸ü°²È«
     trimToSize();
-    //å¦‚æœæ•°ç»„æ‰€å­˜æ•°æ®å¤ªå°‘ï¼Œä½¿å¾—arraySize<= arrayLength / 4ï¼Œä»¥ä¸‹è¯­å¥å°†ç¼©å°æ•°ç»„å¤§å°
+    //Èç¹ûÊı×éËù´æÊı¾İÌ«ÉÙ£¬Ê¹µÃarraySize<= arrayLength / 4£¬ÒÔÏÂÓï¾ä½«ËõĞ¡Êı×é´óĞ¡
     while (arraySize < arrayLength / 4)
     {
         changeLength(element, arrayLength, arrayLength / 2);
@@ -303,17 +303,17 @@ void arrayList<T>::erase(int theIndex)
     }
 }
 
-/*åœ¨ç´¢å¼•theIndexçš„ä½ç½®ä¸Šæ’å…¥ä¸€ä¸ªå…ƒç´ theElement*/
+/*ÔÚË÷ÒıtheIndexµÄÎ»ÖÃÉÏ²åÈëÒ»¸öÔªËØtheElement*/
 template<class T>
 void arrayList<T>::insert(int theIndex, const T& theElement)
 {
-    /*åˆ¤æ–­æ˜¯å¦ä¸ºæœ‰æ•ˆç´¢å¼•*/
+    /*ÅĞ¶ÏÊÇ·ñÎªÓĞĞ§Ë÷Òı*/
     if(theIndex != 0 && theIndex != arraySize)
         checkIndex(theIndex);
-    //æœ‰æ•ˆç´¢å¼•ï¼Œç¡®å®šæ˜¯å¦æ•°ç»„å·²æ»¡
+    //ÓĞĞ§Ë÷Òı£¬È·¶¨ÊÇ·ñÊı×éÒÑÂú
     if (arraySize == arrayLength)
     {
-        //æ•°ç»„ç©ºé—´å·²æ»¡ï¼Œæ•°ç»„é•¿åº¦å€å¢
+        //Êı×é¿Õ¼äÒÑÂú£¬Êı×é³¤¶È±¶Ôö
         changeLength(element, arrayLength, 2 * arrayLength);
         arrayLength *= 2;
     }
@@ -322,17 +322,17 @@ void arrayList<T>::insert(int theIndex, const T& theElement)
     arraySize += 1;
 }
 
-/*åœ¨ç´¢å¼•theIndexçš„ä½ç½®ä¸Šæ’å…¥ä¸€ä¸ªå…ƒç´ theElement,å¦‚æœæŒ‡å®šsizeï¼Œå½“æ•°ç»„ç©ºé—´æ»¡æ—¶å°†æ•°ç»„çš„å®¹é‡è®¾å®šä¸ºsize*/
+/*ÔÚË÷ÒıtheIndexµÄÎ»ÖÃÉÏ²åÈëÒ»¸öÔªËØtheElement,Èç¹ûÖ¸¶¨size£¬µ±Êı×é¿Õ¼äÂúÊ±½«Êı×éµÄÈİÁ¿Éè¶¨Îªsize*/
 template<class T>
 void arrayList<T>::insert(int theIndex, const T& theElement,int size)
 {
-    /*åˆ¤æ–­æ˜¯å¦ä¸ºæœ‰æ•ˆç´¢å¼•*/
+    /*ÅĞ¶ÏÊÇ·ñÎªÓĞĞ§Ë÷Òı*/
     if(theIndex != 0 && theIndex != arraySize)
         checkIndex(theIndex);
-    //æœ‰æ•ˆç´¢å¼•ï¼Œç¡®å®šæ˜¯å¦æ•°ç»„å·²æ»¡
+    //ÓĞĞ§Ë÷Òı£¬È·¶¨ÊÇ·ñÊı×éÒÑÂú
     if (arraySize == arrayLength)
     {
-        //æ•°ç»„ç©ºé—´å·²æ»¡ï¼Œæ•°ç»„é•¿åº¦è®¾ç½®ä¸ºsize
+        //Êı×é¿Õ¼äÒÑÂú£¬Êı×é³¤¶ÈÉèÖÃÎªsize
         changeLength(element, arrayLength, size);
         arrayLength = size;
     }
@@ -341,21 +341,21 @@ void arrayList<T>::insert(int theIndex, const T& theElement,int size)
     arraySize += 1;
 }
 
-/*æ•°ç»„å…ƒç´ è¾“å‡º*/
+/*Êı×éÔªËØÊä³ö*/
 template<class T>
 void arrayList<T>::output(ostream& out) const
 {
     copy(element, element + arraySize, ostream_iterator<T>(cout, " "));
 }
 
-/*åœ¨æ•°ç»„æœ€å³ç«¯æ’å…¥å…ƒç´ theElement*/
+/*ÔÚÊı×é×îÓÒ¶Ë²åÈëÔªËØtheElement*/
 template<class T>
 void arrayList<T>::push_back(const T& theElement)
 {
-    //æœ‰æ•ˆç´¢å¼•ï¼Œç¡®å®šæ•°ç»„å·²æ»¡
+    //ÓĞĞ§Ë÷Òı£¬È·¶¨Êı×éÒÑÂú
     if (arraySize == arrayLength)
     {
-        //æ•°ç»„ç©ºé—´å·²æ»¡ï¼Œæ•°ç»„é•¿åº¦è®¾ç½®ä¸ºsize
+        //Êı×é¿Õ¼äÒÑÂú£¬Êı×é³¤¶ÈÉèÖÃÎªsize
         changeLength(element, arrayLength, arrayLength*2);
         arrayLength = arrayLength * 2;
     }
@@ -363,15 +363,15 @@ void arrayList<T>::push_back(const T& theElement)
     arraySize++;
 }
 
-/*åˆ é™¤æ•°ç»„æœ€å³ç«¯å…ƒç´ å¹¶è¿”å›è¯¥å…ƒç´ */
+/*É¾³ıÊı×é×îÓÒ¶ËÔªËØ²¢·µ»Ø¸ÃÔªËØ*/
 template<class T>
 T arrayList<T>::pop_back()
 {
     checkIndex(arraySize-1);
     T temp = element[arraySize - 1];
     arraySize--;
-    trimToSize();//å¦‚æœæ•°ç»„ä¸­æ— å…ƒç´ ï¼Œåˆ™å°†æ•°ç»„çš„å®¹é‡ç½®ä¸º1
-    //å¦‚æœæ•°ç»„æ‰€å­˜æ•°æ®å¤ªå°‘ï¼Œä½¿å¾—arraySize<= arrayLength / 4ï¼Œä»¥ä¸‹è¯­å¥å°†ç¼©å°æ•°ç»„å¤§å°
+    trimToSize();//Èç¹ûÊı×éÖĞÎŞÔªËØ£¬Ôò½«Êı×éµÄÈİÁ¿ÖÃÎª1
+    //Èç¹ûÊı×éËù´æÊı¾İÌ«ÉÙ£¬Ê¹µÃarraySize<= arrayLength / 4£¬ÒÔÏÂÓï¾ä½«ËõĞ¡Êı×é´óĞ¡
     while (arraySize < arrayLength / 4)
     {
         changeLength(element, arrayLength, arrayLength / 2);
@@ -380,7 +380,7 @@ T arrayList<T>::pop_back()
     return temp;
 }
 
-/*äº¤æ¢ä¸¤æ•°ç»„çš„å…ƒç´ ,ä¼ é€’çš„å‚æ•°å¿…é¡»æ˜¯å¼•ç”¨*/
+/*½»»»Á½Êı×éµÄÔªËØ,´«µİµÄ²ÎÊı±ØĞëÊÇÒıÓÃ*/
 template<class T>
 void arrayList<T>::swap(arrayList<T>& theList)
 {
@@ -397,7 +397,7 @@ void arrayList<T>::swap(arrayList<T>& theList)
     theList.setElement(temp);
 }
 
-/*å°†æ•°ç»„çš„å®¹é‡æ”¹ç¼–ä¸ºå½“å‰å®¹é‡å’ŒtheCapacityçš„è¾ƒå¤§è€…*/
+/*½«Êı×éµÄÈİÁ¿¸Ä±àÎªµ±Ç°ÈİÁ¿ºÍtheCapacityµÄ½Ï´óÕß*/
 template<class T>
 void arrayList<T>::reserve(int theCapacity)
 {
@@ -413,14 +413,14 @@ void arrayList<T>::reserve(int theCapacity)
         arrayLength = theCapacity;
     }
 }
-/*ç”¨å…ƒç´ theElementæ›¿æ¢ç´¢å¼•ä¸ºtheIndexçš„å…ƒç´ */
+/*ÓÃÔªËØtheElementÌæ»»Ë÷ÒıÎªtheIndexµÄÔªËØ*/
 template<class T>
 void arrayList<T>::set(int theIndex, const T& theElement)
 {
     checkIndex(theIndex);
     element[theIndex] = theElement;
 }
-/*æ¸…ç©ºæ•°ç»„*/
+/*Çå¿ÕÊı×é*/
 template<class T>
 void arrayList<T>::clear()
 {
@@ -428,11 +428,11 @@ void arrayList<T>::clear()
     trimToSize();
 }
 
-/*åˆ é™¤[theIndex1,theIndex2]æŒ‡å®šç´¢å¼•èŒƒå›´å†…çš„å…ƒç´ */
+/*É¾³ı[theIndex1,theIndex2]Ö¸¶¨Ë÷Òı·¶Î§ÄÚµÄÔªËØ*/
 template<class T>
 void arrayList<T>::removeRange(int theIndex1, int theIndex2)
 {
-    //é¦–å…ˆæ£€æŸ¥ç´¢å¼•æ˜¯å¦æœ‰æ•ˆ
+    //Ê×ÏÈ¼ì²éË÷ÒıÊÇ·ñÓĞĞ§
     checkIndex(theIndex1);
     checkIndex(theIndex2);
     for (int i = theIndex1; i < arraySize - (theIndex2 - theIndex1); i++)
@@ -442,7 +442,7 @@ void arrayList<T>::removeRange(int theIndex1, int theIndex2)
     arraySize -= theIndex2 - theIndex1 + 1;
 }
 
-/*è¿”å›å€¼ä¸ºæŒ‡å®šå…ƒç´ æœ€åå‡ºç°æ—¶çš„ç´¢å¼•ï¼›å¦‚æœå…ƒç´ ä¸å­˜åœ¨ï¼Œåˆ™è¿”å›-1ã€‚*/
+/*·µ»ØÖµÎªÖ¸¶¨ÔªËØ×îºó³öÏÖÊ±µÄË÷Òı£»Èç¹ûÔªËØ²»´æÔÚ£¬Ôò·µ»Ø-1¡£*/
 template<class T>
 int arrayList<T>::lastIndexOf(T theElement)
 {
@@ -454,7 +454,7 @@ int arrayList<T>::lastIndexOf(T theElement)
     return -1;
 }
 
-/*åŸåœ°é¢ å€’çº¿æ€§è¡¨å…ƒç´ çš„é¡ºåº*/
+/*Ô­µØµßµ¹ÏßĞÔ±íÔªËØµÄË³Ğò*/
 template<class T>
 void arrayList<T>::reverse()
 {
@@ -462,11 +462,11 @@ void arrayList<T>::reverse()
         Swap<T>(element[i], element[arraySize - i - 1]);
 }
 
-/*å°†çº¿æ€§è¡¨çš„å…ƒç´ å‘å·¦ç§»åŠ¨iä¸ªä½ç½®*/
+/*½«ÏßĞÔ±íµÄÔªËØÏò×óÒÆ¶¯i¸öÎ»ÖÃ*/
 template<class T>
 void arrayList<T>::leftShift(int num)
 {
-    //é¦–å…ˆæ£€æŸ¥ç´¢å¼•æ˜¯å¦æœ‰æ•ˆ
+    //Ê×ÏÈ¼ì²éË÷ÒıÊÇ·ñÓĞĞ§
     checkIndex(num-1);
     for (int i = 0; i < arraySize - num + 1; i++)
     {
@@ -475,7 +475,7 @@ void arrayList<T>::leftShift(int num)
     arraySize -= num;
 }
 
-/*å°†çº¿æ€§è¡¨çš„å…ƒç´ å¾ªç¯å·¦ç§»iä½*/
+/*½«ÏßĞÔ±íµÄÔªËØÑ­»·×óÒÆiÎ»*/
 template<class T>
 void arrayList<T>::circularShift(int num)
 {
@@ -484,7 +484,7 @@ void arrayList<T>::circularShift(int num)
     leftShift(num);
 }
 
-/*å°†çº¿æ€§è¡¨çš„å…ƒç´ éš”ä¸€ä¸ªåˆ é™¤ä¸€ä¸ª*/
+/*½«ÏßĞÔ±íµÄÔªËØ¸ôÒ»¸öÉ¾³ıÒ»¸ö*/
 template<class T>
 void arrayList<T>::half()
 {
@@ -494,10 +494,10 @@ void arrayList<T>::half()
 }
 
 /*
-åˆ›å»ºä¸€ä¸ªæ–°çš„çº¿æ€§è¡¨ï¼Œè¯¥è¡¨åŒ…å«äº†aå’Œbä¸­çš„æ‰€æœ‰å…ƒç´ ï¼Œå…¶ä¸­aå’Œbçš„å…ƒç´ è½®æµå‡ºç°ï¼Œè¡¨ä¸­çš„é¦–
-å…ƒç´ ä¸ºaä¸­çš„ç¬¬ä¸€ä¸ªå…ƒç´ ã€‚åœ¨è½®æµæ’åˆ—å…ƒç´ æ—¶ï¼Œå¦‚æœæŸä¸ªè¡¨çš„å…ƒç´ ç”¨å®Œäº†ï¼Œåˆ™æŠŠå¦ä¸€ä¸ªè¡¨çš„å…¶
-ä½™å…ƒç´ ä¾æ¬¡æ·»åŠ åœ¨æ–°è¡¨çš„åéƒ¨ã€‚ä»£ç çš„å¤æ‚æ€§åº”ä¸ä¸¤ä¸ªè¾“å…¥è¡¨çš„é•¿åº¦å‘ˆçº¿æ€§æ¯”ä¾‹å…³ç³»ã€‚
-å½’å¹¶åçš„çº¿æ€§è¡¨æ˜¯è°ƒç”¨å¯¹è±¡*this
+´´½¨Ò»¸öĞÂµÄÏßĞÔ±í£¬¸Ã±í°üº¬ÁËaºÍbÖĞµÄËùÓĞÔªËØ£¬ÆäÖĞaºÍbµÄÔªËØÂÖÁ÷³öÏÖ£¬±íÖĞµÄÊ×
+ÔªËØÎªaÖĞµÄµÚÒ»¸öÔªËØ¡£ÔÚÂÖÁ÷ÅÅÁĞÔªËØÊ±£¬Èç¹ûÄ³¸ö±íµÄÔªËØÓÃÍêÁË£¬Ôò°ÑÁíÒ»¸ö±íµÄÆä
+ÓàÔªËØÒÀ´ÎÌí¼ÓÔÚĞÂ±íµÄºó²¿¡£´úÂëµÄ¸´ÔÓĞÔÓ¦ÓëÁ½¸öÊäÈë±íµÄ³¤¶È³ÊÏßĞÔ±ÈÀı¹ØÏµ¡£
+¹é²¢ºóµÄÏßĞÔ±íÊÇµ÷ÓÃ¶ÔÏó*this
 */
 template <class T>
 void arrayList<T>::meld(arrayList<T>& a, arrayList<T>& b)
@@ -522,7 +522,7 @@ void arrayList<T>::meld(arrayList<T>& a, arrayList<T>& b)
     }
 }
 
-/*æœ‰åºåˆ—è¡¨a,bï¼Œåˆå¹¶ç”Ÿæˆä¸€ä¸ªæ–°çš„æœ‰åºåˆ—è¡¨ï¼Œæ–°åˆ—è¡¨ä¸º(*this)*/
+/*ÓĞĞòÁĞ±ía,b£¬ºÏ²¢Éú³ÉÒ»¸öĞÂµÄÓĞĞòÁĞ±í£¬ĞÂÁĞ±íÎª(*this)*/
 template<class T>
 void arrayList<T>::merge(arrayList<T>& a, arrayList<T>& b)
 {
@@ -561,7 +561,7 @@ void arrayList<T>::merge(arrayList<T>& a, arrayList<T>& b)
     }
 }
 
-/*ç”Ÿæˆä¸¤ä¸ªçº¿æ€§è¡¨aå’Œbï¼ŒaåŒ…å«*thisä¸­ç´¢å¼•ä¸ºå¥‡æ•°çš„å…ƒç´ ï¼ŒbåŒ…å«å…¶ä½™çš„å…ƒç´ */
+/*Éú³ÉÁ½¸öÏßĞÔ±íaºÍb£¬a°üº¬*thisÖĞË÷ÒıÎªÆæÊıµÄÔªËØ£¬b°üº¬ÆäÓàµÄÔªËØ*/
 template<class T>
 void arrayList<T>::split(arrayList<T>& a, arrayList<T>& b)
 {
@@ -575,7 +575,7 @@ void arrayList<T>::split(arrayList<T>& a, arrayList<T>& b)
             b.push_back(element[i]);
     }
 }
-/*å°†æ•°ç»„çš„å®¹é‡è®¾ç½®ä¸ºcapacity,å¹¶å°†æ•°ç»„çš„å¤§å°è®¾ç½®ä¸ºcapacity,åªç”¨äºsparseMatrixç±»*/
+/*½«Êı×éµÄÈİÁ¿ÉèÖÃÎªcapacity,²¢½«Êı×éµÄ´óĞ¡ÉèÖÃÎªcapacity,Ö»ÓÃÓÚsparseMatrixÀà*/
 template<class T>
 void arrayList<T>::reSet(int capacity)
 {
@@ -587,15 +587,15 @@ void arrayList<T>::reSet(int capacity)
     arraySize = capacity;
 }
 
-/*inputå‡½æ•°*/
+/*inputº¯Êı*/
 template<class T>
 istream& arrayList<T>::input(istream& in)
 {
     int numberOfElement = 0;
     cout << "Please enter the number of elements:" << endl;
-    while (!(in >> numberOfElement)) {//å¦‚æœè¾“å…¥ç±»å‹ä¸åŒ¹é…ï¼Œåˆ™æ‰§è¡Œå¾ªç¯ä½“
-        in.clear(); // reset inputè®¾ç½®æ ‡å¿—ä½ä¸ºæœ‰æ•ˆ
-        while (in.get() != '\n') //åˆ é™¤æ²¡æœ‰ç”¨çš„è¾“å…¥
+    while (!(in >> numberOfElement)) {//Èç¹ûÊäÈëÀàĞÍ²»Æ¥Åä£¬ÔòÖ´ĞĞÑ­»·Ìå
+        in.clear(); // reset inputÉèÖÃ±êÖ¾Î»ÎªÓĞĞ§
+        while (in.get() != '\n') //É¾³ıÃ»ÓĞÓÃµÄÊäÈë
             continue; // get rid of bad input
         cout << "Please enter the number of elements:" << endl;
     }
@@ -603,9 +603,9 @@ istream& arrayList<T>::input(istream& in)
     for (int i = 0; i < numberOfElement; i++)
     {
         cout << "Please enter the element: " << (i + 1) << endl;
-        while (!(in >> inElement)) {//å¦‚æœè¾“å…¥ç±»å‹ä¸åŒ¹é…ï¼Œåˆ™æ‰§è¡Œå¾ªç¯ä½“
-            in.clear(); // reset inputè®¾ç½®æ ‡å¿—ä½ä¸ºæœ‰æ•ˆ
-            while (in.get() != '\n') //åˆ é™¤æ²¡æœ‰ç”¨çš„è¾“å…¥
+        while (!(in >> inElement)) {//Èç¹ûÊäÈëÀàĞÍ²»Æ¥Åä£¬ÔòÖ´ĞĞÑ­»·Ìå
+            in.clear(); // reset inputÉèÖÃ±êÖ¾Î»ÎªÓĞĞ§
+            while (in.get() != '\n') //É¾³ıÃ»ÓĞÓÃµÄÊäÈë
                 continue;
             cout << "Please enter the element: " << (i + 1) << endl;
         }
@@ -614,14 +614,14 @@ istream& arrayList<T>::input(istream& in)
     return in;
 }
 
-/*é‡è½½<<æ“ä½œç¬¦*/
+/*ÖØÔØ<<²Ù×÷·û*/
 template<class T>
 ostream& operator<<(ostream& out, const arrayList<T>& x)
 {
     x.output(out);
     return out;
 }
-/*é‡è½½>>æ“ä½œç¬¦*/
+/*ÖØÔØ>>²Ù×÷·û*/
 template<typename T>
 std::istream& operator>>(std::istream &os, arrayList<T>& m)
 {
@@ -629,7 +629,7 @@ std::istream& operator>>(std::istream &os, arrayList<T>& m)
     return os;
 }
 
-/*é‡è½½[]æ“ä½œç¬¦*/
+/*ÖØÔØ[]²Ù×÷·û*/
 template<class T>
 T& arrayList<T>::operator[](int i)
 {
@@ -641,7 +641,7 @@ const T& arrayList<T>::operator[](int i) const
     return element[i];
 }
 
-/*é‡è½½==æ“ä½œç¬¦*/
+/*ÖØÔØ==²Ù×÷·û*/
 template<class T>
 bool arrayList<T>::operator==(arrayList<T> right) const
 {
@@ -650,15 +650,15 @@ bool arrayList<T>::operator==(arrayList<T> right) const
         for (int i = 0; i < arraySize; i++)
         {
             if ((*this)[i] != right[i])
-                return false;//é‡åˆ°ä¸ç›¸ç­‰ç›´æ¥è¿”å›false
+                return false;//Óöµ½²»ÏàµÈÖ±½Ó·µ»Øfalse
         }
-        return true;//éƒ½ç›¸ç­‰æ—¶è¿”å›true
+        return true;//¶¼ÏàµÈÊ±·µ»Øtrue
     }
     else
         return false;
 }
 
-/*é‡è½½!=æ“ä½œç¬¦*/
+/*ÖØÔØ!=²Ù×÷·û*/
 template<class T>
 bool arrayList<T>::operator!=(arrayList<T> right) const
 {
@@ -667,17 +667,17 @@ bool arrayList<T>::operator!=(arrayList<T> right) const
         for (int i = 0; i < arraySize; i++)
         {
             if ((*this)[i] != right[i])
-                return true;//é‡åˆ°ä¸ç›¸ç­‰ç›´æ¥è¿”å›true
+                return true;//Óöµ½²»ÏàµÈÖ±½Ó·µ»Øtrue
         }
-        return false;//éƒ½ç›¸ç­‰æ—¶è¿”å›false
+        return false;//¶¼ÏàµÈÊ±·µ»Øfalse
     }
     else
-        return true;//å…ƒç´ æ•°é‡ä¸ç›¸ç­‰è¿”å›true
+        return true;//ÔªËØÊıÁ¿²»ÏàµÈ·µ»Øtrue
 }
 
-/*é‡è½½<æ“ä½œç¬¦*/
-//å½“leftçš„é•¿åº¦å°äºå³è¾¹æ—¶ï¼Œæ¯”è¾ƒleftå’Œrightçš„å…ƒç´ ;å¦‚æ‰€æœ‰leftå…ƒç´ æŒ‰å­—å…¸é¡ºåºå°äºå¯¹åº”çš„rightå…ƒç´ ï¼Œåˆ™è¿”å›trueï¼Œåä¹‹è¿”å›false
-//å½“leftçš„é•¿åº¦å¤§äºå³è¾¹æ—¶ï¼Œè¿”å›false
+/*ÖØÔØ<²Ù×÷·û*/
+//µ±leftµÄ³¤¶ÈĞ¡ÓÚÓÒ±ßÊ±£¬±È½ÏleftºÍrightµÄÔªËØ;ÈçËùÓĞleftÔªËØ°´×ÖµäË³ĞòĞ¡ÓÚ¶ÔÓ¦µÄrightÔªËØ£¬Ôò·µ»Øtrue£¬·´Ö®·µ»Øfalse
+//µ±leftµÄ³¤¶È´óÓÚÓÒ±ßÊ±£¬·µ»Øfalse
 template<class T>
 bool arrayList<T>::operator<(arrayList<T> right) const
 {
@@ -686,23 +686,23 @@ bool arrayList<T>::operator<(arrayList<T> right) const
         for (int i = 0; i < arraySize; i++)
         {
             if ((*this)[i] >= right[i])
-                return false;//é‡åˆ°å¤§äºç›´æ¥è¿”å›false
+                return false;//Óöµ½´óÓÚÖ±½Ó·µ»Øfalse
         }
-        return true;//éƒ½å°äºæ—¶è¿”å›false
+        return true;//¶¼Ğ¡ÓÚÊ±·µ»Øfalse
     }
     else
-        return false;//å…ƒç´ æ•°é‡ä¸ç›¸ç­‰è¿”å›true
+        return false;//ÔªËØÊıÁ¿²»ÏàµÈ·µ»Øtrue
 }
 
-/*æ’åº*/
-/*åŠŸèƒ½ï¼šåŠæ—¶ç»ˆæ­¢çš„å†’æ³¡æ’åº,æ—¶é—´å¤æ‚åº¦ä¸ºn(n-1)/2*/
+/*ÅÅĞò*/
+/*¹¦ÄÜ£º¼°Ê±ÖÕÖ¹µÄÃ°ÅİÅÅĞò,Ê±¼ä¸´ÔÓ¶ÈÎªn(n-1)/2*/
 template<class T>
 void arrayList<T>::bubbleSort()
 {
     bool is_sorted = true;
     for (int i = arraySize; is_sorted && i > 1; i--)
     {
-        is_sorted = false;//å…ˆè®¾ç½®ä¸ºæœªäº¤æ¢ï¼Œå¦‚æœäº¤æ¢äº†å°±ä¼šè¢«è®¾ç½®ä¸ºäº¤æ¢ã€‚
+        is_sorted = false;//ÏÈÉèÖÃÎªÎ´½»»»£¬Èç¹û½»»»ÁË¾Í»á±»ÉèÖÃÎª½»»»¡£
         for (int j = 0; j < i - 1; j++)
         {
             if (element[j] > element[j + 1])
@@ -714,16 +714,16 @@ void arrayList<T>::bubbleSort()
     }
 }
 
-/*æŒ‰åæ¬¡æ’åº*/
+/*°´Ãû´ÎÅÅĞò*/
 template<class T>
 void arrayList<T>::rankSort()
 {
     int* r = new int[arraySize];
-    //åˆå§‹åŒ–åæ¬¡
+    //³õÊ¼»¯Ãû´Î
     for (int i = 0; i < arraySize; i++)
         r[i] = 0;
-    //è®¡ç®—åæ¬¡
-    for (int i = arraySize - 1; i >= 0; i--) //ä»å³å¾€å·¦æ‹¿å‡ºæ¯ä¸ªå…ƒç´ ä¸å…¶ä»–å…ƒç´ æ¯”è¾ƒ
+    //¼ÆËãÃû´Î
+    for (int i = arraySize - 1; i >= 0; i--) //´ÓÓÒÍù×óÄÃ³öÃ¿¸öÔªËØÓëÆäËûÔªËØ±È½Ï
     {
         for (int j = 0; j < i ; j++)
         {
@@ -733,7 +733,7 @@ void arrayList<T>::rankSort()
                 r[j]++;
         }
     }
-    //æŒ‰åæ¬¡æ’åº
+    //°´Ãû´ÎÅÅĞò
     for (int i = 0; i < arraySize; i++)
     {
         if (i != r[i])
@@ -745,7 +745,7 @@ void arrayList<T>::rankSort()
     delete[] r;
 }
 
-/*è¿”å›æ•´ä¸ªæ•°ç»„ä¸­æœ€å¤§å…ƒç´ çš„ç´¢å¼•*/
+/*·µ»ØÕû¸öÊı×éÖĞ×î´óÔªËØµÄË÷Òı*/
 template<class T>
 int arrayList<T>::indexOfMax()
 {
@@ -759,7 +759,7 @@ int arrayList<T>::indexOfMax()
     }
     return indexMax;
 }
-/*é€‰æ‹©æ’åº*/
+/*Ñ¡ÔñÅÅĞò*/
 template<class T>
 void arrayList<T>::selectionSort()
 {
@@ -778,15 +778,15 @@ void arrayList<T>::selectionSort()
         Swap<T>(element[i - 1], element[indexMax]);
     }
 }
-/*åŸåœ°æ’å…¥æ’åº*/
+/*Ô­µØ²åÈëÅÅĞò*/
 template<class T>
 void arrayList<T>::insertSort()
 {
     int temp = 0;
     for (int i = 1; i < arraySize; i++)
     {
-        temp = element[i];//å­˜ä½è¦æ’å…¥çš„å…ƒç´ 
-        //å¦‚æœå®ƒå‰é¢çš„å…ƒç´ éƒ½å¤§äºè¯¥å…ƒç´ çš„è¯ï¼Œå°±å°†å®ƒå‰é¢çš„å…ƒç´ åç§»ä¸€ä½
+        temp = element[i];//´æ×¡Òª²åÈëµÄÔªËØ
+        //Èç¹ûËüÇ°ÃæµÄÔªËØ¶¼´óÓÚ¸ÃÔªËØµÄ»°£¬¾Í½«ËüÇ°ÃæµÄÔªËØºóÒÆÒ»Î»
         int j = 0;
         for (j = i - 1; temp < element[j]; j--)
         {

@@ -1,8 +1,8 @@
 /*
 Project name :			allAlgorithmsTest
-Last modified Date:		2022å¹´8æœˆ13æ—¥17ç‚¹38åˆ†
+Last modified Date:		2022Äê8ÔÂ13ÈÕ17µã38·Ö
 Last Version:			V1.0
-Descriptions:			ç»¼åˆå„ç§éæˆå‘˜å‡½æ•°
+Descriptions:			×ÛºÏ¸÷ÖÖ·Ç³ÉÔ±º¯Êı
 */
 #pragma once
 #ifndef _MYFUNCTIONS_H_
@@ -15,7 +15,7 @@ using std::min;
 using std::endl;
 using std::cout;
 using std::bad_alloc;
-/*äº¤æ¢ä¸¤æ•°æ®*/
+/*½»»»Á½Êı¾İ*/
 template<class V>
 void Swap(V& a, V& b)
 {
@@ -24,9 +24,9 @@ void Swap(V& a, V& b)
     b = temp;
 }
 /*
-ä½œç”¨ï¼šå°†æ•°ç»„çš„é•¿åº¦åŠ å€
-è¾“å…¥ï¼šæŒ‡é’ˆaæŒ‡å‘éœ€è¦æ”¹å˜é•¿åº¦çš„æ•°ç»„ï¼ŒoldLengthè¡¨ç¤ºæ•°ç»„åŸæ¥çš„é•¿åº¦ï¼ŒnewLengthè¡¨ç¤ºéœ€è¦æ”¹å˜çš„æ–°é•¿åº¦
-ç»“æœï¼šå°†æ•°ç»„æ‰©å®¹/ç¼©å®¹ ä¸ºnewLength
+×÷ÓÃ£º½«Êı×éµÄ³¤¶È¼Ó±¶
+ÊäÈë£ºÖ¸ÕëaÖ¸ÏòĞèÒª¸Ä±ä³¤¶ÈµÄÊı×é£¬oldLength±íÊ¾Êı×éÔ­À´µÄ³¤¶È£¬newLength±íÊ¾ĞèÒª¸Ä±äµÄĞÂ³¤¶È
+½á¹û£º½«Êı×éÀ©Èİ/ËõÈİ ÎªnewLength
 */
 template<class T>
 void changeLength(T*& a, int oldLength, int newLength)
@@ -39,7 +39,7 @@ void changeLength(T*& a, int oldLength, int newLength)
     delete[] a;
     a = temp;
 }
-/*éå†ä¸€ç»´æ•°ç»„*/
+/*±éÀúÒ»Î¬Êı×é*/
 template<class T>
 void traverse1dArray(T* x, int length)
 {
@@ -47,14 +47,14 @@ void traverse1dArray(T* x, int length)
         cout << x[i] << " ";
     cout << endl;
 }
-/*åˆ›å»ºäºŒç»´æ•°ç»„*/
+/*´´½¨¶şÎ¬Êı×é*/
 template <class T>
 bool make2dArray(T**& x, int numberOfRows, int numberOfColumns)
 {
     try {
-        //è¡ŒæŒ‡é’ˆ
+        //ĞĞÖ¸Õë
         x = new T * [numberOfRows];
-        //ä¸ºæ¯ä¸€è¡Œåˆ†é…å†…å­˜
+        //ÎªÃ¿Ò»ĞĞ·ÖÅäÄÚ´æ
         for (int i = 0; i < numberOfRows; i++)
             x[i] = new int[numberOfColumns];
         return true;
@@ -62,7 +62,7 @@ bool make2dArray(T**& x, int numberOfRows, int numberOfColumns)
     catch (bad_alloc) { return false; }
 }
 
-/*éå†äºŒç»´æ•°ç»„*/
+/*±éÀú¶şÎ¬Êı×é*/
 template<class T>
 void traverse2dArray(T**& x, int numberOfRows, int numberOfColumns)
 {
@@ -76,8 +76,8 @@ void traverse2dArray(T**& x, int numberOfRows, int numberOfColumns)
         cout << endl;
     }
 }
-/*myFunctionsçš„æµ‹è¯•å‡½æ•°*/
+/*myFunctionsµÄ²âÊÔº¯Êı*/
 void myFunctionsTest();
-/*æ±‰è¯ºå¡”çš„é€’å½’è§£å†³æ–¹æ¡ˆ*/
+/*ººÅµËşµÄµİ¹é½â¾ö·½°¸*/
 void towersOfHanoiRecursion(int n, int x, int y, int z);
 #endif

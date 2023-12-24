@@ -1,8 +1,8 @@
 /*
 Project name :			allAlgorithmsTest
-Last modified Date:		2022å¹´8æœˆ13æ—¥17ç‚¹38åˆ†
+Last modified Date:		2022Äê8ÔÂ13ÈÕ17µã38·Ö
 Last Version:			V1.0
-Descriptions:			main()å‡½æ•°ï¼Œæ§åˆ¶è¿è¡Œæ‰€æœ‰çš„æµ‹è¯•å‡½æ•°
+Descriptions:			main()º¯Êı£¬¿ØÖÆÔËĞĞËùÓĞµÄ²âÊÔº¯Êı
 */
 #include <iostream>
 #include "_2myFunctions.h"

@@ -1,8 +1,8 @@
 /*
 Project name :			allAlgorithmsTest
-Last modified Date:		2022å¹´8æœˆ13æ—¥17ç‚¹38åˆ†
+Last modified Date:		2022Äê8ÔÂ13ÈÕ17µã38·Ö
 Last Version:			V1.0
-Descriptions:			çº¿æ€§è¡¨è™šç±»
+Descriptions:			ÏßĞÔ±íĞéÀà
 */
 #pragma once
 #ifndef __LINEARLIST_H_
@@ -15,13 +15,13 @@ class linearList
 {
 public:
     virtual ~linearList() {};
-    virtual bool empty() const = 0;//è¿”å›true å½“ä¸”ä»…å½“çº¿æ€§è¡¨ä¸ºç©º
-    virtual int size() const = 0;//è¿”å›çº¿æ€§è¡¨çš„å…ƒç´ ä¸ªæ•°
-    virtual T& get(int theIndex) const = 0;//è¿”å›ç´¢å¼•ä¸ºtheIndexçš„å…ƒç´ 
-    virtual int indexOf(const T& theElement) const = 0;//è¿”å›å…ƒç´ theElementç¬¬ä¸€æ¬¡å‡ºç°æ—¶çš„ç´¢å¼•
-    virtual void erase(int theIndex) = 0;//åˆ é™¤ç´¢å¼•ä¸ºtheIndexçš„å…ƒç´ 
-    virtual void insert(int theIndex, const T& theElement) = 0;//æŠŠå…ƒç´ theElementæ’å…¥çº¿æ€§è¡¨ä¸­ç´¢å¼•ä¸ºtheIndexçš„ä½ç½®ä¸Š
-    virtual void output(ostream& out) const = 0;//æŠŠçº¿æ€§è¡¨æ’å…¥è¾“å…¥æµout
+    virtual bool empty() const = 0;//·µ»Øtrue µ±ÇÒ½öµ±ÏßĞÔ±íÎª¿Õ
+    virtual int size() const = 0;//·µ»ØÏßĞÔ±íµÄÔªËØ¸öÊı
+    virtual T& get(int theIndex) const = 0;//·µ»ØË÷ÒıÎªtheIndexµÄÔªËØ
+    virtual int indexOf(const T& theElement) const = 0;//·µ»ØÔªËØtheElementµÚÒ»´Î³öÏÖÊ±µÄË÷Òı
+    virtual void erase(int theIndex) = 0;//É¾³ıË÷ÒıÎªtheIndexµÄÔªËØ
+    virtual void insert(int theIndex, const T& theElement) = 0;//°ÑÔªËØtheElement²åÈëÏßĞÔ±íÖĞË÷ÒıÎªtheIndexµÄÎ»ÖÃÉÏ
+    virtual void output(ostream& out) const = 0;//°ÑÏßĞÔ±í²åÈëÊäÈëÁ÷out
 };
 #endif
 

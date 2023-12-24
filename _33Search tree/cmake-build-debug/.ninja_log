@@ -1,0 +1,19 @@
+# ninja log v5
+0	279	7251229939410766	CMakeFiles/_33Search_tree.dir/main.cpp.obj	f4935416912907c6
+722	876	7251254437344319	_33Search_tree.exe	1d71e5c2ca37b032
+0	722	7251254436075693	CMakeFiles/_33Search_tree.dir/binarySearchTree.cpp.obj	c4f3655619670d34
+1	97	7251268809608100	build.ninja	c7dce9c9b7c051ce
+1	90	7251268809608100	build.ninja	c7dce9c9b7c051ce
+0	727	7251268816983102	CMakeFiles/_33Search_tree.dir/binarySearchTree.cpp.obj	c4f3655619670d34
+727	880	7251268818248873	_33Search_tree.exe	1d71e5c2ca37b032
+1	278	7251268967437509	CMakeFiles/_33Search_tree.dir/main.cpp.obj	f4935416912907c6
+279	415	7251268968550913	_33Search_tree.exe	1d71e5c2ca37b032
+1	491	7251270194970132	CMakeFiles/_33Search_tree.dir/binarySearchTree.cpp.obj	c4f3655619670d34
+492	655	7251270196349167	_33Search_tree.exe	1d71e5c2ca37b032
+0	388	7251271968108963	CMakeFiles/_33Search_tree.dir/main.cpp.obj	f4935416912907c6
+388	532	7251271969291894	_33Search_tree.exe	1d71e5c2ca37b032
+0	387	7251273060695512	CMakeFiles/_33Search_tree.dir/main.cpp.obj	f4935416912907c6
+5	397	7251273060816656	CMakeFiles/_33Search_tree.dir/binarySearchTree.cpp.obj	c4f3655619670d34
+398	548	7251273062077424	_33Search_tree.exe	1d71e5c2ca37b032
+0	268	7251273149183658	CMakeFiles/_33Search_tree.dir/main.cpp.obj	f4935416912907c6
+268	405	7251273150305117	_33Search_tree.exe	1d71e5c2ca37b032
