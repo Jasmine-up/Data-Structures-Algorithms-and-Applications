@@ -1,6 +1,6 @@
 # ninja log v5
 2	437	7211182500003904	CMakeFiles/_2chain.dir/main.cpp.obj	180cac003e5336fb
-1	116	7211323179479325	build.ninja	a30776fa431e12b
+1	116	7252110793622124	build.ninja	a30776fa431e12b
 2	288	7211179792628823	CMakeFiles/_2chain.dir/_2myFunctions.cpp.obj	3ec2dc8afbfd670d
 8	554	7211182501158279	CMakeFiles/_2chain.dir/_6chain.cpp.obj	cd04402885e229dc
 554	667	7211182502265450	_2chain.exe	2e90f49ebcb094ef

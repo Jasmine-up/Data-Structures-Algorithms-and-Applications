@@ -1,0 +1,14 @@
+# ninja log v5
+5	675	7254655910169474	CMakeFiles/_34Balanced_search_tree.dir/main.cpp.obj	1acb86c939f5314
+0	406	7254658507416672	CMakeFiles/_34Balanced_search_tree.dir/AVLTree.cpp.obj	615e1d77f98f435f
+407	552	7254658508595767	_34Balanced_search_tree.exe	e76b7c24bd20ec0f
+0	409	7254658958844103	CMakeFiles/_34Balanced_search_tree.dir/AVLTree.cpp.obj	615e1d77f98f435f
+410	558	7254658960036150	_34Balanced_search_tree.exe	e76b7c24bd20ec0f
+1	417	7254662877016984	CMakeFiles/_34Balanced_search_tree.dir/main.cpp.obj	1acb86c939f5314
+6	425	7254662877106958	CMakeFiles/_34Balanced_search_tree.dir/AVLTree.cpp.obj	615e1d77f98f435f
+427	600	7254662878508137	_34Balanced_search_tree.exe	e76b7c24bd20ec0f
+1	460	7254664567957232	CMakeFiles/_34Balanced_search_tree.dir/main.cpp.obj	1acb86c939f5314
+6	471	7254664568057244	CMakeFiles/_34Balanced_search_tree.dir/AVLTree.cpp.obj	615e1d77f98f435f
+471	621	7254664569283537	_34Balanced_search_tree.exe	e76b7c24bd20ec0f
+1	439	7254665867393453	CMakeFiles/_34Balanced_search_tree.dir/AVLTree.cpp.obj	615e1d77f98f435f
+439	591	7254665868636167	_34Balanced_search_tree.exe	e76b7c24bd20ec0f
