@@ -142,3 +142,7 @@ CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/detail
 33. 二叉搜索树、有重复值的二叉搜索树、索引二叉搜索树模板类 - 应用(直方图、箱子装载问题最优适配法、交叉分布(待重看))
 
 CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135186960)
+
+34. 红黑树的C++实现-百万级数据测试通过
+
+CSDN文章链接：[地址](https://blog.csdn.net/weixin_44410704/article/details/135490013)
